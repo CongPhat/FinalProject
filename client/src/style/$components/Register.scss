@@ -1,0 +1,49 @@
+.register {
+  &__wrapper {
+
+  }
+  &__main {
+    width: 50%;
+    margin: auto;
+  }
+  &__group {
+    padding: 10px;
+    label {
+      font-weight: 600;
+    }
+  }
+  &__tick {
+    color: $color-red-1;
+    font-size: 12px;
+  }
+  &__input {
+    padding: 5px 20px;
+    border: 1px solid $color-grey-2;
+    border-radius: 5px;
+    input {
+      width: 100%;
+      border: 0;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__error {
+    color: $color-red-1;
+    font-weight: 600;
+  }
+  &__notifi {
+    padding: 15px;
+    &--title {
+      color: $color-red-1;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .register {
+    &__main {
+      width: 90%;
+    }
+  }
+}

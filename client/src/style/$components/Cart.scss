@@ -1,0 +1,78 @@
+@import './../_cores/variable/color.scss';
+
+.cart {
+  &__main {
+    width: 70%;
+    margin: auto;
+  }
+  &__item {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid $color-grey-1;
+    border-left: none;
+    border-right: none;
+    &--image {
+      text-align: center;
+      img {
+        width: 30%;
+      }
+    }
+    &--infor {
+      span {
+        display: block;
+      }
+    }
+  }
+  &__total {
+    padding: 10px 0;
+    &--value {
+      color: $color-red-1;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  &__noitem {
+    padding: 15px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cart {
+    &__main {
+      width: 100%;
+    }
+    &__title {
+      h4 {
+        font-size: 13px;
+      }
+    }
+    &__item {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid $color-grey-1;
+      border-left: none;
+      border-right: none;
+      &--image {
+        text-align: center;
+        img {
+          width: 70%;
+        }
+      }
+      &--infor {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cart {
+    &__main {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.hot-products {
+  &__slick {
+    text-align: center;
+  }
+  &__items {
+    width: 90% !important;
+    &--image {
+      overflow: hidden;
+      img {
+        width: 100%;
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.5s;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+    }
+    &--infor {
+      margin: 10px 0;
+      .name {
+        font-size: 20px;
+      }
+      .price {
+        color: $color-red-1;
+      }
+    }
+  }
+}

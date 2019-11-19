@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arima+Madurai:300,400,500,700,900&display=swap');
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arima Madurai', cursive !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding-top: 190px;
+}
+
+@media screen and (max-width: 567px) {
+  main {
+    padding-top: 100px;
+  }
+}

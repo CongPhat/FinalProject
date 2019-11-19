@@ -1,0 +1,41 @@
+@import './../_cores/variable/color.scss';
+
+.home-shopall {
+  .index__banner {
+    &__item {
+      position: relative;
+    }
+    &__direc {
+      font-family: 'Lobster Two', sans-serif;
+      color: $color-white-1 !important;
+    }
+    &--main {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        opacity: 1;
+        transition: 0.5s;
+      }
+      &:hover {
+        img {
+          opacity: 0.9;
+          transform: scale(1.03);
+        }
+      }
+    }
+    &--content {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+      .name {
+        font-size: 50px;
+        font-weight: 600;
+        // text-transform: uppercase;
+      }
+      .des {
+
+      }
+    }
+  }
+}

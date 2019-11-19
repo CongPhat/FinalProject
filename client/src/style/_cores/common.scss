@@ -1,0 +1,172 @@
+@import './variable/color';
+
+body a {
+  font-weight: 600;
+  color: $color-black-1;
+  transition: 0.5s;
+  &:hover {
+    text-decoration: none !important;
+    color: $color-black-1;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+input {
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.title-page {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  a {
+    opacity: 1;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 2px;
+    background: $color-brown-1;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+}
+
+.title__page--home {
+  margin-bottom: 20px;
+  text-align: center;
+  &__sub {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  &__main {
+
+  }
+}
+
+.pagination--all {
+  text-align: center;
+  ul {
+    li {
+      display: inline-block;
+      margin-left: 10px;
+      button {
+        width: 30px;
+        height: 30px;
+        background: $color-black-1;
+        border-radius: 50%;
+        transition: 0.5s;
+        color: $color-white-1;
+        outline: none;
+        &:hover {
+          color: $color-black-1;
+          background: $color-brown-1;
+        }
+      }
+    }
+  }
+}
+
+.active_btn--pagi {
+  color: $color-black-1 !important;
+  background: $color-brown-1 !important;
+}
+
+.btn-page {
+  position: relative;
+  width: 100%;
+  border: 1px solid $color-black-1;
+  background: $color-black-1;
+  padding: 10px 0;
+  margin-top: 10px;
+  text-transform: uppercase;
+  overflow: hidden;
+  span {
+    position: relative;
+    z-index: 30;
+    color: $color-white-1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 20;
+    left: 40%;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    transition: 0.3s;
+    background: $color-black-1;
+  }
+  &:hover {
+    span {
+      color: $color-black-1;
+    }
+    &::after {
+      left: 0%;
+      width: 100%;
+      background: $color-white-1;
+    }
+  }
+}
+
+.btn-page--white {
+  background: $color-white-1;
+  span {
+    color: $color-black-1;
+  }
+  &::after {
+    background: $color-white-1;
+  }
+  &:hover {
+    span {
+      color: $color-white-1;
+    }
+    &::after {
+      background: $color-black-1;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title-page {
+    &::before, &::after {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .title-page {
+    &::before, &::after {
+      width: 42%;
+    }
+  }
+}

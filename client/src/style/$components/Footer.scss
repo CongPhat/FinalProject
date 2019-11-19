@@ -1,0 +1,48 @@
+.footer {
+  margin-top: 100px;
+  border-top: 1px solid $color-grey-3;
+  padding: 50px 0;
+  &__inner {
+
+  }
+  &__block {
+    margin-top: 20px;
+    &--title {
+      h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    &--links {
+      ul {
+        li {
+          margin: 5px 0;
+          font-size: 15px;
+          a {
+            &:hover {
+              color: $color-brown-1;
+            }
+          }
+        }
+      }
+    }
+    &--text {
+
+    }
+    &__main {
+      &--group {
+        margin: 10px 0;
+        strong {
+          display: block;
+        }
+        span {
+          font-size: 14px;
+          text-decoration: underline;
+        }
+      }
+      &--intro {
+
+      }
+    }
+  }
+}

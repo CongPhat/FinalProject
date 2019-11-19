@@ -1,0 +1,19 @@
+//import
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+//import cores
+@import './style/_cores/common.scss';
+
+@import './style/$components/BannerItem.scss';
+@import './style/$components/ProductCategory.scss';
+@import './style/$components/Header.scss';
+@import './style/$components/Products.scss';
+@import './style/$components/HotProducts.scss';
+@import './style/$components/Home.scss';
+@import './style/$components/Most-Purchased-Product.scss';
+@import './style/$components/Cart.scss';
+@import './style/$components/Checkout.scss';
+@import './style/$components/Login.scss';
+@import './style/$components/Register.scss';
+@import './style/$components/Footer.scss';

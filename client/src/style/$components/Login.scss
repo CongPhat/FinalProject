@@ -1,0 +1,52 @@
+@import './../_cores/variable/color.scss';
+
+.login {
+  &__wrapper {
+
+  }
+  &__main {
+    width: 50%;
+    margin: auto;
+  }
+  &__group {
+    padding: 10px 0;
+  }
+  &__input {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid $color-grey-3;
+    input {
+      width: 100%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__error {
+    color: $color-red-1;
+    font-weight: 600;
+    margin-top: 3px;
+  }
+  &__direc {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 576px ){
+  .login {
+    &__main {
+      width: 90% !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1023px ){
+  .login {
+    &__main {
+      width: 70%;
+    }
+  }
+}
